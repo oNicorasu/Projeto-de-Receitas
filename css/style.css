@@ -1,0 +1,79 @@
+body {
+   margin: 0px;
+}
+
+.background {
+   margin: 0px;
+   padding: 50px;
+   position: relative;
+   overflow: hidden;
+   background-image: url(../img/main-image.png);
+   background-size: cover;
+   background-position: center;
+}
+
+.background::before {
+   content: "";
+   position: absolute;
+   top: 0;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   background-color: rgba(87, 56, 36, 0.8); /* Cor com transparência */
+   filter: blur(1px); /* Aplica o blur */
+   z-index: 1;
+}
+
+div .main{
+   padding: 30px;
+   font-family: "Alice", system-ui;
+   background-color: #F0E8C2;
+   border-radius: 30px;
+   background-position: center;
+   width: 700px;
+   margin: 0px auto 30px auto;
+   z-index: 2;
+   position: relative;
+}
+
+.cupcakes {
+   width: 700px;
+   border-radius: 30px;
+}
+
+.content {
+   padding: 0px 20px;
+}
+
+.pFooter{
+   margin: 0px auto;
+   text-align: center;
+   color: #F0E8C2;
+   z-index: 2;
+   position: relative;
+}
+
+p img{
+   height: 12px;
+}
+
+h1, h2{
+   color: #291B1A;
+}
+
+h1 {
+   font-size: 40px;
+   font-weight: 1.6;
+}
+
+h2 {
+   font-size: 24px 150%;
+   font-weight: 1.5;
+}
+
+p, li{
+   color: #573A37;
+   font-size: 16px 150%;
+   font-weight: 1.5;
+   max-width: 700px;
+}
